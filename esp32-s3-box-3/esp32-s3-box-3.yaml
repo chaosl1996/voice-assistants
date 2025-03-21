@@ -681,18 +681,14 @@ font:
       type: gfonts
       family: Noto Sans Simplified Chinese
       weight: 300
-      glyphs: ${ALLOWED_CHARACTERS}
-      subset: zh-CN
+    glyphs: ${ALLOWED_CHARACTERS}
+    subset: zh-CN
     id: font_request
     size: 15
-  - file:
-      type: gfonts
-      family: Noto Sans Simplified Chinese
-      weight: 300
-      glyphs: ${ALLOWED_CHARACTERS}
-      subset: zh-CN
+  – file: “https://github.com/notofonts/noto-cjk/raw/refs/heads/main/google-fonts/NotoSerifTC%5Bwght%5D.ttf”
     id: font_response
     size: 15
+    glyphs: ‘${allowed_characters}’
   - file:
       type: gfonts
       family: Noto Sans Simplified Chinese
