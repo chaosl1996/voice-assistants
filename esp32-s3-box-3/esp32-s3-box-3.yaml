@@ -679,24 +679,21 @@ image:
 font:
   - file:
       type: gfonts
-      family: Noto Sans SC
+      family: Noto Sans Simplified Chinese
       weight: 300
       italic: true
-      subset: zh-CN
     id: font_request
     size: 15
   - file:
       type: gfonts
-      family: Noto Sans SC
+      family: Noto Sans Simplified Chinese
       weight: 300
-      subset: zh-CN
     id: font_response
     size: 15
   - file:
       type: gfonts
-      family: Noto Sans SC
+      family: Noto Sans Simplified Chinese
       weight: 300
-      subset: zh-CN
     id: font_timer
     size: 30
 
