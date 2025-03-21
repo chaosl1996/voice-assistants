@@ -747,6 +747,7 @@ display:
     id: s3_box_lcd
     model: st7789v
     mirror_x: true
+    mirror_y: false
     data_rate: 40MHz
     cs_pin: 5
     dc_pin: 4
