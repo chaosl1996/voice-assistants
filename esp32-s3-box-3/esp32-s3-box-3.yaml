@@ -745,7 +745,6 @@ spi:
     mosi_pin: 6
 
 display:
-display:
   - platform: ili9xxx
     id: s3_box_lcd
     model: ST7789V
@@ -756,6 +755,10 @@ display:
       number: 48
       inverted: false
     update_interval: never
+    transform:
+      swap_xy: true
+      mirror_x: false
+      mirror_y: true
     rotation: 90
     pages:
       - id: idle_page
