@@ -745,16 +745,13 @@ spi:
 display:
   - platform: ili9xxx
     id: s3_box_lcd
-    model: S3BOX
+    model: ST7789V
     invert_colors: false
     data_rate: 40MHz
     cs_pin: 5
     dc_pin: 4
     reset_pin: 48
     update_interval: never
-    transform:
-      mirror_x: false
-      mirror_y: false
     pages:
       - id: idle_page
         lambda: |-
