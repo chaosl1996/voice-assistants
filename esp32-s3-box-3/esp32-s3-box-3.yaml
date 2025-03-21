@@ -748,7 +748,11 @@ display:
     reset_pin: 48
     update_interval: never
     transform:
+      swap_xy: true
       mirror_x: true
+    dimensions:
+      height: 240
+      width: 320
     pages:
       - id: idle_page
         lambda: |-
