@@ -746,10 +746,7 @@ display:
   - platform: ili9xxx
     id: s3_box_lcd
     model: st7789v
-    transform:
-      swap_xy: true
-      mirror_x: NO
-      mirror_y: true
+    mirror_x: true
     data_rate: 40MHz
     cs_pin: 5
     dc_pin: 4
