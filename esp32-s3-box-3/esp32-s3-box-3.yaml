@@ -677,10 +677,28 @@ image:
     transparency: alpha_channel
 
 font:
-  – file: “https://github.com/notofonts/noto-cjk/raw/refs/heads/main/google-fonts/NotoSerifTC%5Bwght%5D.ttf
+  - file:
+      type: gfonts
+      family: Noto Sans SC
+      weight: 300
+      italic: true
+      subset: zh-CN
+    id: font_request
+    size: 15
+  - file:
+      type: gfonts
+      family: Noto Sans SC
+      weight: 300
+      subset: zh-CN
     id: font_response
     size: 15
-    glyphs: ‘${allowed_characters}’
+  - file:
+      type: gfonts
+      family: Noto Sans SC
+      weight: 300
+      subset: zh-CN
+    id: font_timer
+    size: 30
 
 
 text_sensor:
@@ -738,7 +756,8 @@ display:
     reset_pin: 48
     update_interval: never
     transform:
-      mirror_x: true
+      mirror_x: false
+      mirror_y: false
     pages:
       - id: idle_page
         lambda: |-
