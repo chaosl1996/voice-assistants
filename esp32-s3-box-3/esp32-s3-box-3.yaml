@@ -681,11 +681,11 @@ font:
       type: gfonts
       family: Noto Sans Simplified Chinese
       weight: 300
-    glyphs: ${ALLOWED_CHARACTERS}
+    glyphs: ‘${allowed_characters}’
     subset: zh-CN
     id: font_request
     size: 15
-  – file: “https://github.com/notofonts/noto-cjk/raw/refs/heads/main/google-fonts/NotoSerifTC%5Bwght%5D.ttf”
+  – file: “https://github.com/RichStrong/tiny_font/blob/master/hei.TTF”
     id: font_response
     size: 15
     glyphs: ‘${allowed_characters}’
@@ -693,7 +693,7 @@ font:
       type: gfonts
       family: Noto Sans Simplified Chinese
       weight: 300
-      glyphs: ${ALLOWED_CHARACTERS}
+      glyphs: ‘${allowed_characters}’
       subset: zh-CN
     id: font_timer
     size: 30
@@ -746,18 +746,16 @@ spi:
 display:
   - platform: ili9xxx
     id: s3_box_lcd
-    model: ST7789V
+    model: st7789v
+    transform:
+      swap_xy: true
+      mirror_x: NO
+      mirror_y: true
     data_rate: 40MHz
     cs_pin: 5
     dc_pin: 4
-    reset_pin:
-      number: 48
-      inverted: false
+    reset_pin: 48
     update_interval: never
-    transform:
-      swap_xy: true
-      mirror_x: false
-      mirror_y: true
     pages:
       - id: idle_page
         lambda: |-
