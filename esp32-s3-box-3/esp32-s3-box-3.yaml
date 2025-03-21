@@ -678,22 +678,18 @@ image:
 
 font:
   - file:
-      type: gfonts
-      family: Figtree
-      weight: 300
-      italic: true
+      type: local
+      path: voice_assistant_gfx/hei.TTF  # 下载后的本地路径
     id: font_request
     size: 15
   - file:
-      type: gfonts
-      family: Figtree
-      weight: 300
+      type: local
+      path: voice_assistant_gfx/hei.TTF
     id: font_response
     size: 15
   - file:
-      type: gfonts
-      family: Figtree
-      weight: 300
+      type: local
+      path: voice_assistant_gfx/hei.TTF
     id: font_timer
     size: 30
 
