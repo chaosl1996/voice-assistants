@@ -679,22 +679,20 @@ image:
 font:
   - file:
       type: gfonts
-      family: Noto Sans Simplified Chinese
+      family: Notosanssc
       weight: 300
-    glyphs: ‘${allowed_characters}’
-    subset: zh-CN
     id: font_request
     size: 15
-  – file: “https://github.com/RichStrong/tiny_font/blob/master/hei.TTF”
-    id: font_response
-    size: 15
-    glyphs: ‘${allowed_characters}’
   - file:
       type: gfonts
-      family: Noto Sans Simplified Chinese
+      family: Notosanssc
       weight: 300
-      glyphs: ‘${allowed_characters}’
-      subset: zh-CN
+    id: font_response
+    size: 15
+  - file:
+      type: gfonts
+      family: Notosanssc
+      weight: 300
     id: font_timer
     size: 30
 
