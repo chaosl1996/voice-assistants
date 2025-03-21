@@ -759,7 +759,6 @@ display:
       swap_xy: true
       mirror_x: false
       mirror_y: true
-    rotation: 90
     pages:
       - id: idle_page
         lambda: |-
