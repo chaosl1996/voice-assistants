@@ -682,6 +682,7 @@ font:
       family: Noto Sans Simplified Chinese
       weight: 300
       glyphs: ${ALLOWED_CHARACTERS}
+      subset: zh-CN
     id: font_request
     size: 15
   - file:
@@ -689,6 +690,7 @@ font:
       family: Noto Sans Simplified Chinese
       weight: 300
       glyphs: ${ALLOWED_CHARACTERS}
+      subset: zh-CN
     id: font_response
     size: 15
   - file:
@@ -696,6 +698,7 @@ font:
       family: Noto Sans Simplified Chinese
       weight: 300
       glyphs: ${ALLOWED_CHARACTERS}
+      subset: zh-CN
     id: font_timer
     size: 30
 
