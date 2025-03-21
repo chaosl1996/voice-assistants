@@ -751,6 +751,7 @@ display:
     dc_pin: 4
     reset_pin: 48
     update_interval: never
+    mirror_x: true
     pages:
       - id: idle_page
         lambda: |-
