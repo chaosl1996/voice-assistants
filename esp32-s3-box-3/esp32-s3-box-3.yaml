@@ -749,9 +749,7 @@ display:
     data_rate: 40MHz
     cs_pin: 5
     dc_pin: 4
-    reset_pin:
-      number: 48
-      inverted: true
+    reset_pin: 48
     update_interval: never
     pages:
       - id: idle_page
@@ -772,7 +770,6 @@ display:
           it.filled_rectangle(20 , 20 , 280 , 30 , Color::WHITE );
           it.rectangle(20 , 20 , 280 , 30 , Color::BLACK );
           it.printf(30, 25, id(font_request), Color::BLACK, "%s", id(text_request).state.c_str());
-
           id(draw_timer_timeline).execute();
       - id: replying_page
         lambda: |-
