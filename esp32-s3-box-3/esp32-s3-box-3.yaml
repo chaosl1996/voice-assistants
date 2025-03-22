@@ -677,7 +677,9 @@ image:
     transparency: alpha_channel
 
 font:
-  - file: "hei.TTF"
+  - file:
+      type: gfonts
+      family: Noto Sans Simplified Chinese
       weight: 300
     id: font_request
     size: 15
