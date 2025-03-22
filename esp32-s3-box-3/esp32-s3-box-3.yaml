@@ -677,22 +677,16 @@ image:
     transparency: alpha_channel
 
 font:
-  - file:
-      type: gfonts
-      family: Noto Sans SC
+  - file: "gfonts://Noto Sans SC"
       weight: 300
       italic: true
     id: font_request
     size: 15
-  - file:
-      type: gfonts
-      family: Noto Sans SC
+  - file: "gfonts://Noto Sans SC"
       weight: 300
     id: font_response
     size: 15
-  - file:
-      type: gfonts
-      family: Noto Sans SC
+  - file: "gfonts://Noto Sans SC"
       weight: 300
     id: font_timer
     size: 30
