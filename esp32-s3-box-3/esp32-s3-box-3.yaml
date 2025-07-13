@@ -760,7 +760,7 @@ display:
     transform:
       swap_xy: false
       mirror_x: false
-      mirror_y: true
+      mirror_y: false
     data_rate: 40MHz
     cs_pin: 5
     dc_pin: 4
@@ -770,13 +770,13 @@ display:
       - id: idle_page
         lambda: |-
           it.fill(id(idle_color));
-          it.image((it.get_width()), (it.get_height()), id(casita_timer_finished), ImageAlign::CENTER);
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(error_no_wifi), ImageAlign::CENTER);
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
       - id: listening_page
         lambda: |-
           it.fill(id(listening_color));
-          it.image((it.get_width()), (it.get_height()), id(casita_timer_finished), ImageAlign::CENTER);
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(error_no_wifi), ImageAlign::CENTER);
           id(draw_timer_timeline).execute();
       - id: thinking_page
         lambda: |-
@@ -789,7 +789,7 @@ display:
       - id: replying_page
         lambda: |-
           it.fill(id(replying_color));
-          it.image((it.get_width()), (it.get_height()), id(casita_timer_finished), ImageAlign::CENTER);
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(error_no_wifi), ImageAlign::CENTER);
           it.filled_rectangle(20 , 20 , 280 , 30 , Color::WHITE );
           it.rectangle(20 , 20 , 280 , 30 , Color::BLACK );
           it.filled_rectangle(20 , 190 , 280 , 30 , Color::WHITE );
@@ -800,7 +800,7 @@ display:
       - id: timer_finished_page
         lambda: |-
           it.fill(id(idle_color));
-          it.image((it.get_width()), (it.get_height()), id(casita_timer_finished), ImageAlign::CENTER);
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(error_no_wifi), ImageAlign::CENTER);
       - id: error_page
         lambda: |-
           it.fill(id(error_color));
