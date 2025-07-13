@@ -760,8 +760,8 @@ display:
     dimensions:
       height: 240
       width: 320
-      offset_height: 0
-      offset_width: 0
+      offset_height: 60
+      offset_width: 80
     transform:
       swap_xy: false
       mirror_x: false
