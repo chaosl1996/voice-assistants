@@ -757,11 +757,6 @@ display:
     id: s3_box_lcd
     model: ili9341
     invert_colors: false
-    dimensions:
-      height: 240
-      width: 320
-      offset_height: 60
-      offset_width: 80
     transform:
       swap_xy: false
       mirror_x: false
