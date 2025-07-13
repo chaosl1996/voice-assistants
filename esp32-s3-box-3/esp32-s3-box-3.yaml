@@ -750,9 +750,9 @@ display:
     id: s3_box_lcd
     model: ili9341
     transform:
-      swap_xy: true
-      mirror_x: false
-      mirror_y: true
+      swap_xy: false
+      mirror_x: true
+      mirror_y: false
     data_rate: 40MHz
     cs_pin: 5
     dc_pin: 4
