@@ -758,7 +758,7 @@ display:
     model: ili9341
     invert_colors: false
     transform:
-      swap_xy: false
+      swap_xy: true
       mirror_x: true
       mirror_y: false
     data_rate: 40MHz
