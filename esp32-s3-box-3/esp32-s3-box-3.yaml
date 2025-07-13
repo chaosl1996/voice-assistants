@@ -763,9 +763,9 @@ display:
       offset_height: 0
       offset_width: 0
     transform:
-      swap_xy: true
-      mirror_x: true
-      mirror_y: false
+      swap_xy: false
+      mirror_x: false
+      mirror_y: true
     data_rate: 40MHz
     cs_pin: 5
     dc_pin: 4
