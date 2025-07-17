@@ -754,7 +754,7 @@ display:
     invert_colors: false
     transform:
       swap_xy: false
-      mirror_x: false
+      mirror_x: true
       mirror_y: false
     data_rate: 40MHz
     cs_pin: 5
